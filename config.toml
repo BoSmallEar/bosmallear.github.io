@@ -1,4 +1,31 @@
 baseURL = 'https://bosmallear.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Zhizheng Liu's homepage"
 theme = 'github-style'
+
+[params]
+  author = "Zhizheng Liu"
+  description = "Doing Well by Doing Good"
+  github = "bosmallear"
+  linkedin = "zhizheng-liu-4921401a6"
+  scholar="Asc7j9oAAAAJ"
+  email = "zhizheng@cs.ucla.edu"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😀"
+  favicon = "/images/github.png"
+  avatar = "/images/avatar.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  location = "Los Angeles"
+  enableGitalk = true
+  custom_css = ["css/custom.css"]
+  custom_js = ["js/custom.js"]
+
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[services]
+  [services.googleAnalytics]
+    ID = "UA-123456-789"
