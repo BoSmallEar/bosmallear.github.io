@@ -15,6 +15,7 @@ theme = 'github-style'
   lastmod = true
   favicon = "/images/github.png"
   avatar = "/images/avatar.jpg"
+  userStatusEmoji = "😉"
   headerIcon = "/images/GitHub-Mark-Light-32px.png"
   location = "Los Angeles"
   custom_css = ["css/custom.css"]
