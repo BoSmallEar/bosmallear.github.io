@@ -20,6 +20,7 @@ theme = 'github-style'
   location = "Los Angeles"
   custom_css = ["css/custom.css"]
   custom_js = ["js/custom.js"]
+  resume = "https://drive.google.com/file/d/1tAqjBCNunNTPjdrgGkrzplrQPLP9ycXv/view?usp=sharing"
 
 
 [frontmatter]
