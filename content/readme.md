@@ -4,7 +4,7 @@ date: 2023-02-22T20:03:14+01:00
 draft: false
 ---
 
-**Hi, my name is Zhizheng Liu (刘知正)**. I am currently a third-year Ph.D. student in Computer Science at [Vision and Autonomy Intelligence Lab (VAIL)](https://vail-ucla.github.io/) at UCLA. Before that, I earned my bachelor’s degree from the SJTU-UM Joint Institute and my master’s degree from ETH Zurich.
+**Hi, my name is Zhizheng Liu (刘知正)**. I am currently a fourth-year Ph.D. candidate in Computer Science at [Vision and Autonomy Intelligence Lab (VAIL)](https://vail-ucla.github.io/) at UCLA. Before that, I earned my bachelor’s degree from the SJTU-UM Joint Institute and my master’s degree from ETH Zurich.
 
 Throughout my research journey, I have been fortunate to receive invaluable guidance and support, without which I would not be who I am today. I am especially grateful to [Prof. Yikang Li](https://liyikang.top/), who first introduced me to research, and to my advisor [Prof. Bolei Zhou](https://boleizhou.github.io/), whose continuous mentorship has been instrumental in shaping my academic path.
 
