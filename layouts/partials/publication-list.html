@@ -1,0 +1,70 @@
+{{ $publications := hugo.Data.publications }}
+{{ $author := .Site.Params.author }}
+{{ $isHome := .IsHome }}
+{{ $hasAnimations := false }}
+{{ range $publications }}
+  {{ if .animation }}{{ $hasAnimations = true }}{{ end }}
+{{ end }}
+
+<section class="publications" aria-labelledby="publications-heading">
+  <div class="publications-header">
+    {{ if $isHome }}
+    <h2 id="publications-heading" class="publications-heading">Selected publications</h2>
+    {{ else }}
+    <h1 id="publications-heading" class="publications-heading">Selected publications</h1>
+    {{ end }}
+    {{ if $hasAnimations }}
+    <button type="button" class="publication-animation-toggle" data-publication-animation-toggle hidden>Pause animations</button>
+    {{ end }}
+  </div>
+
+  <ul class="publication-list">
+    {{ range $publications }}
+    {{ $publication := . }}
+    {{ $url := .links.paper }}
+    {{ with .links.project }}{{ $url = . }}{{ end }}
+    <li class="publication-row" id="publication-{{ .id }}">
+      <div class="publication-thumbnail">
+        {{ if .animation }}
+        <picture>
+          <source data-publication-still media="(prefers-reduced-motion: reduce)" srcset="{{ .image | relURL }}">
+          <img src="{{ .animation | relURL }}" alt="{{ .image_alt }}" width="216" height="144" loading="lazy" decoding="async">
+        </picture>
+        {{ else }}
+        <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" width="216" height="144" loading="lazy" decoding="async">
+        {{ end }}
+      </div>
+      <div class="publication-details">
+        {{ if $isHome }}
+        <h3 class="publication-title"><a href="{{ $url }}">{{ .title }}</a></h3>
+        {{ else }}
+        <h2 class="publication-title"><a href="{{ $url }}">{{ .title }}</a></h2>
+        {{ end }}
+        <p class="publication-authors">
+          {{- range $index, $person := .authors -}}
+            {{- if $index }}, {{ end -}}
+            <span class="publication-author">{{ if eq .name $author }}<strong>{{ .name }}</strong>{{ else }}{{ .name }}{{ end }}{{ if .equal_contribution }}<sup aria-label="Equal contribution">*</sup>{{ end }}</span>
+          {{- end -}}
+        </p>
+        <p class="publication-venue">
+          <span>{{ .venue }} {{ .year }}</span>
+          {{ with .distinction }}<span class="publication-distinction">{{ . }}</span>{{ end }}
+        </p>
+        <ul class="publication-links" aria-label="Resources for {{ .title }}">
+          {{ range slice (dict "key" "paper" "label" "Paper") (dict "key" "project" "label" "Project") (dict "key" "code" "label" "Code") }}
+            {{ $label := .label }}
+            {{ with index $publication.links .key }}
+            <li><a href="{{ . }}" aria-label="{{ $label }}: {{ $publication.title }}">{{ $label }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+
+  <p class="publication-footnote">* Equal contribution.</p>
+  {{ with .Site.Params.scholar }}
+  <p class="publications-scholar">For the complete publication list, see <a href="https://scholar.google.com/citations?user={{ . }}">Google Scholar</a>.</p>
+  {{ end }}
+</section>

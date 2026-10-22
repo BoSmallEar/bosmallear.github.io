@@ -1,0 +1,179 @@
+# Entries are displayed in this order, newest first.
+# Keep full author lists; equal_contribution marks confirmed shared authorship.
+# Optional animation is a short GIF from the project's demo; image is its still fallback.
+- id: chairnav
+  title: "ChairNav: Cross-Embodiment Pre-training and Personalization for Long-Horizon Wheelchair Navigation"
+  year: 2026
+  venue: arXiv preprint
+  authors:
+    - name: Junhua Huang
+      equal_contribution: true
+    - name: Zhizheng Liu
+      equal_contribution: true
+    - name: Honglin He
+    - name: Xiang Zhang
+    - name: Bolei Zhou
+  image: images/publications/chairnav.webp
+  animation: images/publications/chairnav.gif
+  image_alt: "ChairNav wheelchair navigating outdoor sidewalks and crossings"
+  links:
+    paper: https://arxiv.org/abs/2610.24012
+    project: https://vail.cs.ucla.edu/ChairNav/
+
+- id: sidewalkbench
+  title: "SidewalkBench: Benchmarking Visual Navigation on Urban Sidewalks"
+  year: 2026
+  venue: CoRL
+  distinction: Spotlight
+  authors:
+    - name: Zhizheng Liu
+      equal_contribution: true
+    - name: Honglin He
+      equal_contribution: true
+    - name: Vivek Alumootil
+      equal_contribution: true
+    - name: Akshat Pandya
+    - name: Brad Squicciarini
+    - name: Wayne Wu
+    - name: Bolei Zhou
+  image: images/publications/sidewalkbench.webp
+  # From long_horizon_pg.mp4: FlowPilot view, 24–30 seconds.
+  animation: images/publications/sidewalkbench.gif
+  image_alt: "SidewalkBench long-horizon navigation in a procedurally generated urban environment"
+  links:
+    paper: https://arxiv.org/abs/2606.16953
+    project: https://vail.cs.ucla.edu/SidewalkBench/
+
+- id: vista4d
+  title: "Vista4D: Video Reshooting with 4D Point Clouds"
+  year: 2026
+  venue: CVPR
+  distinction: Highlight
+  # The project page's dagger denotes internships, not equal contribution.
+  authors:
+    - name: Kuan Heng Lin
+    - name: Zhizheng Liu
+    - name: Pablo Salamanca
+    - name: Yash Kant
+    - name: Ryan Burgert
+    - name: Yuancheng Xu
+    - name: Koichi Namekata
+    - name: Yiwei Zhao
+    - name: Bolei Zhou
+    - name: Micah Goldblum
+    - name: Paul Debevec
+    - name: Ning Yu
+  image: images/publications/vista4d.webp
+  animation: images/publications/vista4d.gif
+  image_alt: "Vista4D video reshooting from reconstructed 4D point clouds"
+  links:
+    paper: https://arxiv.org/abs/2604.21915
+    project: https://eyeline-labs.github.io/Vista4D/
+    code: https://github.com/Eyeline-Labs/Vista4D
+
+- id: josh
+  title: "Joint Optimization for 4D Human-Scene Reconstruction in the Wild"
+  year: 2026
+  venue: ICLR
+  authors:
+    - name: Zhizheng Liu
+    - name: Joe Lin
+    - name: Wayne Wu
+    - name: Bolei Zhou
+  image: images/publications/josh.webp
+  animation: images/publications/josh.gif
+  image_alt: "JOSH jointly reconstructing human motion and a surrounding 3D scene"
+  links:
+    paper: https://arxiv.org/abs/2501.02158
+    project: https://vail.cs.ucla.edu/JOSH/
+    code: https://github.com/genforce/JOSH
+
+- id: vid2sim
+  title: "Vid2Sim: Realistic and Interactive Simulation from Video for Urban Navigation"
+  year: 2025
+  venue: CVPR
+  authors:
+    - name: Ziyang Xie
+    - name: Zhizheng Liu
+    - name: Zhenghao Peng
+    - name: Wayne Wu
+    - name: Bolei Zhou
+  image: images/publications/vid2sim.webp
+  animation: images/publications/vid2sim.gif
+  image_alt: "Vid2Sim turning real-world video into an interactive navigation simulation"
+  links:
+    paper: https://openaccess.thecvf.com/content/CVPR2025/html/Xie_Vid2Sim_Realistic_and_Interactive_Simulation_from_Video_for_Urban_Navigation_CVPR_2025_paper.html
+    project: https://metadriverse.github.io/vid2sim/
+    code: https://github.com/Vid2Sim/Vid2Sim
+
+- id: pvp4real
+  title: "Data-Efficient Learning from Human Interventions for Mobile Robots"
+  year: 2025
+  venue: ICRA
+  authors:
+    - name: Zhenghao Peng
+    - name: Zhizheng Liu
+    - name: Bolei Zhou
+  image: images/publications/pvp4real.webp
+  animation: images/publications/pvp4real.gif
+  image_alt: "A person supervising a mobile delivery robot learning from human interventions"
+  links:
+    paper: https://arxiv.org/abs/2503.04969
+    project: https://metadriverse.github.io/pvp4real/
+    code: https://github.com/metadriverse/pvp4real
+
+- id: pedgen
+  title: "Learning to Generate Diverse Pedestrian Movements from Web Videos with Noisy Labels"
+  year: 2025
+  venue: ICLR
+  authors:
+    - name: Zhizheng Liu
+    - name: Joe Lin
+    - name: Wayne Wu
+    - name: Bolei Zhou
+  image: images/publications/pedgen.webp
+  animation: images/publications/pedgen.gif
+  image_alt: "PedGen generating context-aware pedestrian movements in urban scenes"
+  links:
+    paper: https://arxiv.org/abs/2410.07500
+    project: https://genforce.github.io/PedGen/
+    code: https://github.com/genforce/PedGen
+
+- id: ucsa
+  title: "Unsupervised Continual Semantic Adaptation through Neural Rendering"
+  year: 2023
+  venue: CVPR
+  authors:
+    - name: Zhizheng Liu
+      equal_contribution: true
+    - name: Francesco Milano
+      equal_contribution: true
+    - name: Jonas Frey
+    - name: Roland Siegwart
+    - name: Hermann Blum
+    - name: Cesar Cadena
+  image: images/publications/ucsa.webp
+  animation: images/publications/ucsa.gif
+  image_alt: "Continual semantic scene adaptation using neural rendering across indoor environments"
+  links:
+    paper: https://arxiv.org/abs/2211.13969
+    project: https://projects.asl.ethz.ch/ucsa_neural_rendering/
+    code: https://github.com/ethz-asl/ucsa_neural_rendering
+
+- id: crlf
+  title: "CRLF: Automatic Calibration and Refinement based on Line Feature for LiDAR and Camera in Road Scenes"
+  year: 2021
+  venue: arXiv preprint
+  authors:
+    - name: Tao Ma
+      equal_contribution: true
+    - name: Zhizheng Liu
+      equal_contribution: true
+    - name: Guohang Yan
+    - name: Yikang Li
+  # Figure 4(d), top row, from arXiv:2103.04558.
+  image: images/publications/crlf.webp
+  image_alt: "CRLF calibrated LiDAR points overlaid on the in-house road-scene image"
+  links:
+    paper: https://arxiv.org/abs/2103.04558
+    code: https://github.com/PJLab-ADG/SensorsCalibration/tree/master/lidar2camera
