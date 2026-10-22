@@ -12,4 +12,4 @@ Throughout my research journey, I have been fortunate to receive invaluable guid
 
 Hope you find my research interesting or useful and feel free to reach out if you want to discuss anything!
 
-{{< figure src="/images/fun.png" alt="fun" width="800" >}}
+{{< homepage-gallery >}}
