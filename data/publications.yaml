@@ -43,6 +43,7 @@
   links:
     paper: https://arxiv.org/abs/2606.16953
     project: https://vail.cs.ucla.edu/SidewalkBench/
+    code: https://github.com/VAIL-UCLA/SidewalkBench
 
 - id: vista4d
   title: "Vista4D: Video Reshooting with 4D Point Clouds"
