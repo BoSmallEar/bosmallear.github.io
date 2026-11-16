@@ -45,6 +45,25 @@
     project: https://vail.cs.ucla.edu/SidewalkBench/
     code: https://github.com/VAIL-UCLA/SidewalkBench
 
+- id: flowpilot
+  title: "From Imitation to Alignment: Human-Preference Flow Policies for Long-Horizon Sidewalk Navigation"
+  year: 2026
+  venue: CoRL
+  distinction: "Best Paper at CoRL 2026 HumanRLI Workshop"
+  authors:
+    - name: Honglin He
+    - name: Zhizheng Liu
+    - name: Yukai Ma
+    - name: Bolei Zhou
+  image: images/publications/flowpilot.webp
+  # From the FlowPilot project teaser: real-world pedestrian awareness.
+  animation: images/publications/flowpilot.gif
+  image_alt: "FlowPilot navigating a real-world sidewalk while avoiding pedestrians"
+  links:
+    paper: https://arxiv.org/abs/2606.12603
+    project: https://vail.cs.ucla.edu/FlowPilot/
+    code: https://github.com/VAIL-UCLA/FlowPilot
+
 - id: vista4d
   title: "Vista4D: Video Reshooting with 4D Point Clouds"
   year: 2026

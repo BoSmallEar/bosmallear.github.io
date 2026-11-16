@@ -114,10 +114,10 @@
 
 .publication-distinction {
   padding: 1px 8px;
-  border: 1px solid var(--color-attention-muted);
+  border: 1px solid var(--color-danger-muted);
   border-radius: 12px;
-  background: var(--color-attention-subtle);
-  color: var(--color-attention-fg);
+  background: var(--color-danger-subtle);
+  color: var(--color-danger-fg);
   font-size: 12px;
   font-weight: 500;
 }
